@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Maciel Oliveira">
+    <title>Saudaçao</title>
+</head>
+<body>
+    <h1><span id="saudaJs"></span> Juriscreison !</h1>
+
+    <script> 
+        //declarar variável
+        let hora = new Date().getHours();
+            //console.log(hora);
+        let mensagem    
+            if (hora >= 6 && hora < 12)
+            {
+                mensagem = "Bom Dia"
+            }
+            else if (hora >= 12 && hora < 18)
+            {
+                mensagem = "Boa Tarde"
+            }else{ 
+                mensagem = "Boa Noite"
+            }
+            let elemento = document.getElementById("saudaJs")
+            elemento.innerHTML = mensagem
+    </script>
+</body>
+</html>
